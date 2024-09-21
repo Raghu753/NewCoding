@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<div class="col-md-12"></div>
+<div class="container">NeedType</div>
+<label for="">
+    <input type="text" name="NeedType" value="NeedType" placeholder="entyer NeedType">
+    <br><br>
+    <button id="submit">Submit</button>
+    
+</label>
+<br>
+<!-- creating one Object -->
+ let person = {
+    name:"Varnika",
+    age:6,
+    greet: function(){
+        console.log("Hell " + this.name);
+    }
+};
+person.greet();
+
+ <!-- creating one Class  -->
+ class person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age,
+    }
+    greet() {
+        console.log(`hello my name is ${this.name}`);
+    }
+}
+let john = new Person("john",30);
+john.greet();
+
+
+<br>
+<br>
+<body class="gf" style="background-color: blue;">
+    <div id="container"></div>
+    <button onclick="addElement()" style="color: green;">addElement</button>
+    <script>
+        function addElement() {
+            const container = document.getElementById('container');
+            // create new paragraph element
+            const newElement = document.createElement('p');
+            newElement.textContent = 'this is a dynamically paragraph';
+            // add the new element to conatiner div
+            container.appendChild(newElement);
+        }
+        function robo() {
+            console.log("hello")
+        }
+        robo();
+    </script>
+    
+</body>
+</html>
